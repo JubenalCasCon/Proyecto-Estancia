@@ -1,0 +1,145 @@
+<!-- cabecera -->
+<header>
+
+  <div class="bg-cover flex justify-center  items-center flex-col text-white  bg-center"
+      style="background-image: url(../assets/13.jpg); height: 300px;background-color: rgba(0, 0, 0, 0.5);background-blend-mode: darken; ">
+
+      <p class="text-2xl text-center sm:text-4xl mb-2  " style="font-family: Arial, Helvetica, sans-serif;">
+          Instituto del Noroeste en Ciencias de la Salud
+      </p>
+      <p>{{hours}}:{{minutes}}:{{seconds}}</p>
+
+      <p class="text-lg mt-2 sm:text-2xl " style="font-family: 'Oswald', sans-serif;">
+          Que estén bien
+      </p>
+      
+          <p>Siguenos en nuestras redes sociales </p>
+          <form>
+          <div class="flex justify-center ">
+            <a class="mr-2 mb-3 mt-3 px-4 py-2" href="https://wa.me/5216681030694"><i class="fa fa-whatsapp fa-2x" ></i></a>
+            <a class="mr-2 mb-3 mt-3 px-4 py-2" href="https://www.facebook.com/inocisalosmochis/"><i class="fa fa-facebook fa-2x" ></i></a>
+            <a class="mr-2 mb-3 mt-3 px-4 py-2" href="https://twitter.com/JessBenjamnCas1"><i class="fa fa-twitter fa-2x" ></i></a>
+              
+          </div>
+        </form>  
+  </div>
+  
+
+  
+</header>
+
+
+<!-- Imagenes con logos de información -->
+<div class="flex flex-row justify-around h-32 flex mt-3 px-4 py-2 mb-2">
+  <a class="w-24" [routerLink]="['']"><img class="w-32" src="../assets/Logo.png"></a>
+  
+  <img class="w-32 " src="../assets/semaforo.jpg" aria-placeholder="Contingencia">
+  
+</div>
+
+<div class="flex justify-center text-center text-4xl mb-2">
+  <p>Contigencia Covid 19</p>
+</div>
+<!-- Menú Principal -->
+
+<div class="flex justify-center my-2">
+  <div><button class="bg-blue-400 hover:bg-blue-600 border-black border-2 border-solid py-2 px-4 w-56  rounded-md ml-2 mr-2" ><a [routerLink]="['/noticias']">Noticias Inocisa</a></button></div>
+  <div><button class="bg-blue-400 hover:bg-blue-600 border-black border-2 border-solid py-2 px-4 w-64 rounded-md ml-2 mr-2"><a [routerLink]="['/informativo']">Reportajes</a></button></div>
+  <div><button class="bg-blue-400 hover:bg-blue-600 border-black border-2 border-solid py-2 px-4 w-64 rounded-md ml-2 mr-2"><a [routerLink]="['/contacto']">Contacto</a></button></div>
+  
+</div> 
+
+<!-- Cuadro de informacion inicial -->
+<div class="border-dashed border-black border-2 px-4 py-2 h-64 mx-3 overflow-hidden text-center">
+     <p class="font-bold mb-2 text-center">Inocisa ante la amenaza del Coronavirus</p>   
+
+    <p>Ante este periodo de contigencia Inocisa cambia y se adapta en favor de los adultos mayores. Ellos son el sector más vulnerable ante el Covit 19 y ante eso nos matenemos  preparados.</p>
+    <p class="text-center">Suscribete a nuestras redes y mantente informado </p>
+    <p>En Inocisa queremos que esten bien.</p>
+</div>
+
+<div class="container , mx-auto flex justify-center my-2  w-64 h-64">
+  <video src="../assets/gifsanadistacia.mp4"  autoplay loop>
+      Tu navegador no implementa el elemento <code>video</code>.
+  </video>
+</div>
+
+<!-- Elementos card para noticias de inocisa -->
+<div class="h-64 grid grid-cols-2 grid-flow-row gap-6 px-4 py-2 my-4 ">
+    <div class="">
+        <div class="max-w-sm w-full lg:max-w-full lg:flex">
+            <div class=" bg-center h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('../assets/foto26.jpg')" title="Woman holding a mug">
+            </div>
+            <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+              <div class="mb-8">
+                <p class="text-sm text-gray-600 flex items-center">
+                  <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+                  </svg>
+                  Acceso a Usuarios de Inocisa
+                </p>
+                <div class="text-gray-900 font-bold text-xl mb-2">Viviendo en Inocisa </div>
+                <p class="text-gray-700 text-base">En medio de la Pandemia por el Coronavirus, mantenemos a nuestros residentes felices y contentos</p>
+              </div>
+              <div class="flex items-center">
+                <img class="w-10 h-10 rounded-full mr-4" src="../assets/grandma.svg" alt="Avatar of Jonathan Reinink">
+                <div class="text-sm">
+                  <p class="text-gray-900 leading-none"><a [routerLink]="['/galeria']">Galeria de imagenes</a></p>
+                  <p class="text-gray-600">Última actualización Abril 1</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+    <!-- Segunda tarjeta de informacion -->
+    <div class="">
+        <div class="max-w-sm w-full lg:max-w-full lg:flex">
+            <div class=" bg-center h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('../assets/foto6.jpg')" title="Woman holding a mug">
+            </div>
+            <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+              <div class="mb-8">
+                <p class="text-sm text-gray-600 flex items-center">
+                  <svg class="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+                  </svg>
+                  Acceso a Usuarios de Inocisa
+                </p>
+                <div class="text-gray-900 font-bold text-xl mb-2">¿Quienes somos?</div>
+                <p class="text-gray-700 text-base">Conocenos y descubre de que forma trabajamos nuestro trabajo por el bienestar y la salud de nuestros usuarios </p>
+              </div>
+              <div class="flex items-center">
+                <img class="w-10 h-10 rounded-full mr-4" src="../assets/grandma.svg" alt="Avatar of Jonathan Reinink">
+                <div class="text-sm">
+                  <p class="text-gray-900 leading-none">Nuestra misión visión y valores</p>
+                  <p class="text-gray-600">Abril 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+<!-- Mapa y dirección -->
+
+
+<!-- <div class="h-8 w-full grid grid-cols-1 grid-flow-row px-4 py-2 mt-5 mb-5  ">
+    <div class="container ">
+            <h4>Te esperamos en nuestra dirección principal</h4>
+            <div class="responsive-iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.9672020787984!2d-109.02665548546574!3d25.804656083617225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba267313f6033f%3A0x6fc9c26bddd61f8e!2sINOCISA%20(instituto%20del%20Noroeste%20en%20Ciencias%20de%20la%20Salud%20A.%20C.)!5e0!3m2!1ses-419!2smx!4v1576542527282!5m2!1ses-419!2smx"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+            <p>Calle Higalo S/n Ejido México Los Mochis Ahome Sinaloa</p>
+        </div>
+
+</div> -->
+
+
+
+       
+    <div class="flex justify-center mx-auto px-4 py-2 my-auto ">
+  
+       
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.9672020787984!2d-109.02665548546574!3d25.804656083617225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba267313f6033f%3A0x6fc9c26bddd61f8e!2sINOCISA%20(instituto%20del%20Noroeste%20en%20Ciencias%20de%20la%20Salud%20A.%20C.)!5e0!3m2!1ses-419!2smx!4v1576542527282!5m2!1ses-419!2smx"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+           
+        </div>

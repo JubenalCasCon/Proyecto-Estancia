@@ -1,0 +1,148 @@
+<!-- cabecera -->
+<header>
+
+    <div class="bg-cover flex justify-center  items-center flex-col text-white  bg-center"
+        style="background-image: url(../assets/13.jpg); height: 300px;background-color: rgba(0, 0, 0, 0.5);background-blend-mode: darken; ">
+  
+        <p class="text-2xl text-center sm:text-4xl mb-2  " style="font-family: Arial, Helvetica, sans-serif;">
+            Instituto del Noroeste en Ciencias de la Salud
+        </p>
+        
+  
+        <p class="text-lg mt-2 sm:text-2xl " style="font-family: 'Oswald', sans-serif;">
+            Que estén bien
+        </p>
+        <!-- <button
+            class="bg-blue-500 hover:bg-blue-700 text-white  font-bold py-1 px-2 rounded mt-2 sm:py-2 sm:px-4">Conocenos</button> -->
+            <p>Siguenos en nuestras redes sociales </p>
+            <form>
+            <div class="flex justify-center ">
+              <a class="mr-2 mb-3 mt-3 px-4 py-2" href="https://wa.me/5216681030694"><i class="fa fa-whatsapp fa-2x" ></i></a>
+              <a class="mr-2 mb-3 mt-3 px-4 py-2" href="https://www.facebook.com/inocisalosmochis/"><i class="fa fa-facebook fa-2x" ></i></a>
+              <a class="mr-2 mb-3 mt-3 px-4 py-2" href="https://twitter.com/JessBenjamnCas1"><i class="fa fa-twitter fa-2x" ></i></a>
+                
+            </div>
+          </form>  
+    </div>
+    
+  
+    
+  </header>
+  
+  
+  <!-- Imagenes con logos de información -->
+  <div class="flex flex-row justify-around h-32 flex mt-3 px-4 py-2 mb-2">
+    <a class="w-24" [routerLink]="['']"><img class="w-32" src="../assets/Logo.png"></a>
+    
+    <img class="w-32 " src="../assets/semaforo.jpg" aria-placeholder="Contingencia">
+    
+  </div>
+  
+  <div class="flex justify-center text-center text-4xl mb-2">
+    <p>Contigencia Covid 19</p>
+  </div>
+  <!-- Menú Principal -->
+  
+  <div class="flex justify-center my-2">
+    <div><button class="bg-blue-400 hover:bg-blue-600 border-black border-2 border-solid py-2 px-4 w-56  rounded-md ml-2 mr-2" ><a [routerLink]="['/noticias']">Noticias Inocisa</a></button></div>
+    <div><button class="bg-blue-400 hover:bg-blue-600 border-black border-2 border-solid py-2 px-4 w-64 rounded-md ml-2 mr-2"><a [routerLink]="['/informativo']">Reportajes</a></button></div>
+    <div><button class="bg-blue-400 hover:bg-blue-600 border-black border-2 border-solid py-2 px-4 w-64 rounded-md ml-2 mr-2"><a [routerLink]="['/contacto']">Contacto</a></button></div>
+    
+  </div> 
+   
+
+<div *ngIf="seleccion ==1">
+<div class="border-dashed border-black border-2 px-4 py-2 h-64 mx-3 overflow-hidden">
+    <p class="font-bold mb-2 text-center">Inocisa ante la amenaza del Coronavirus</p>   
+
+   <p>Ante este periodo de contigencia Inocisa cambia y se adapta en favor de los adultos mayores. Ellos son el sector más vulnerable ante el Covit 19 y ante eso estamos preparados</p>
+   <p>En el presente sitio , mantente informado respecto a las medidas que hemos tomado para resguardar la salud de nuestros residentes</p>
+   <p></p>
+</div>
+</div>
+<div *ngIf="seleccion ==1">
+<div class="flex flex-wrap my-8 -mx-2 justify-center">
+    <div class="my-2 px-2 w-1/2 md:w-1/3 lg:w-1/6">
+     <img class="block h-48 w-full" src="../assets/casa1.jfif" alt="profile">
+     <a (click)="mostrararticulo(2)" class="text-center hover:text-gray-500">El amor en los tiempos del coronavirus</a>
+     
+     
+ </div>
+
+</div>
+ <!-- <div class="my-2 px-2 w-1/2 md:w-1/3 lg:w-1/6">
+     <img class="block h-auto w-full" src="../assets/Pareja.jpg" alt="profile">
+ </div>
+ <div class="my-2 px-2 w-1/2 md:w-1/3 lg:w-1/6">
+     <img class="block h-auto w-full" src="../assets/Pareja.jpg" alt="profile">
+ </div>
+ <div class="my-2 px-2 w-1/2 md:w-1/3 lg:w-1/6">
+     <img class="block h-auto w-full" src="../assets/Pareja.jpg" alt="profile">
+ </div>
+ <div class="my-2 px-2 w-1/2 md:w-1/3 lg:w-1/6">
+     <img class="block h-auto w-full" src="../assets/Pareja.jpg" alt="profile">
+ </div>
+ <div class="my-2 px-2 w-1/2 md:w-1/3 lg:w-1/6">
+     <img class="block h-auto w-full" src="../assets/Pareja.jpg" alt="profile">
+ </div>
+ <div class="my-2 px-2 w-1/2 md:w-1/3 lg:w-1/6">
+     <img class="block h-auto w-full" src="../assets/Pareja.jpg" alt="profile">
+ </div>
+ <div class="my-2 px-2 w-1/2 md:w-1/3 lg:w-1/6">
+     <img class="block h-auto w-full" src="../assets/Pareja.jpg" alt="profile">
+ </div>
+ <div class="my-2 px-2 w-1/2 md:w-1/3 lg:w-1/6">
+     <img class="block h-auto w-full" src="../assets/Pareja.jpg" alt="profile">
+ </div>
+ <div class="my-2 px-2 w-1/2 md:w-1/3 lg:w-1/6">
+     <img class="block h-auto w-full" src="../assets/Pareja.jpg" alt="profile">
+ </div>
+ <div class="my-2 px-2 w-1/2 md:w-1/3 lg:w-1/6">
+     <img class="block h-auto w-full" src="../assets/Pareja.jpg" alt="profile">
+ </div>
+ <div class="my-2 px-2 w-1/2 md:w-1/3 lg:w-1/6">
+     <img class="block h-auto w-full" src="../assets/Pareja.jpg" alt="profile">
+ </div> -->
+ 
+</div>
+
+
+
+
+ <!-- Articulo día primero de abril -->
+ <div *ngIf="seleccion == 2" class="  mx-6 px-8 py-2  text-5xl flex justify-center flex-wrap text-justify leading-loose">
+    <table class="">
+    <p class="ml-2 border-red-400 border-l-4 border-solid  ">El amor en los tiempos del coronavirus</p>
+    
+    <p class=" ml-4 text-base font-bold mt-2 mb-4 float-none clearfix text-gray-500">
+        Jesus Benjamin Castañeda   
+    </p> 
+    <p class="ml-4 text-base font-bold mt-2 mb-4 float-none clearfix text-gray-500"> 30 de marzo 2020</p>
+        
+    <img class="w-full px-4" src="../assets/casa1.jfif">
+</table>
+    <div class="text-base mb-4">
+    <p class=" font-bold mt-2 mb-4">
+        La  realización de  todo tipo de sondeos y censos como  el que llevaba  a cabo el INEGI para la  realización del Censo Nacional  de Población y Vivienda 2020 quedó  expresamente suspendido  por  el Consejo  de Salubridad General de nuestro país al  considerarlo una  actividad no  esencial para enfrentar la crisis sanitaria de la pandemia  del coronavirus.
+    </p>   
+    
+    <p>
+        
+Esto significa que la información necesaria para actualizar los rasgos del perfil socio demográfico de nuestro país, deberán demorarse un tiempo más  del  estimado y hasta ahí, habría que estar  de acuerdo ya  que hay varias otras estimaciones realizadas recientemente con motivo del cambio  de régimen que está teniendo lugar  en México desde  diciembre  de 2018 que  son perfectamente útiles y suficientes para entender el sustento  esencial de las medidas  que el actual   gobierno  está tomando para enfrentar la naturaleza e impactos  de esta inédita pandemia  
+    </p> 
+    <p>
+        El tema viene al caso porque  el segmento  de población que sufrirá los  principales estragos  de  salud es  el  que  abarca  lo que popularmente   se  conoce  como la  tercera  edad. Según datos  del Consejo Nacional de Población, en  2019  había aproximadamente  126.5 millones  de habitantes con una esperanza  de vida de 75.1 años. De  ese total,  cerca  de 13 %  son  adultos mayores  y  su  volumen  -cercano a 16 millones de personas en números redondos-   cambia según  se consideren algunas  variables  que ciertas dependencias consideran  importantes al asignar los techos presupuestales de las políticas públicas con que les atienden. Habría que decir que más allá de los criterios con que las dependencias los dinguen, el coronavirus  no hace   demasiada distinción  y  sus impactos  se dejan  sentir con más  fuerza en la  población de 60 y más que  de ninguna  manera  son poca cosa.  
+    </p> 
+    <p >
+        Del perfil  fisio patológico de este segmento  ya también hay diversas  estimaciones del 2019 y años anteriores formulados por  fuentes  confiables que, entre  otras  cosas  señalan la existencia  de dos  grandes grupos en cuanto a cómo sobrellevan su proceso de envejecimiento:  Uno,  que lo  hace    de manera  exitosa, con un aceptable  estado de salud, familia integrada y en condiciones   socio  económica buenas y muy buenas y otro,  con un proceso de envejecimiento  no  exitoso, sin  seguridad social ni  acceso  a los  sistemas  de pensiones y jubilaciones y con los  estragos de  salud  que  traen consigo las enfermedades  crónico  degenerativas que le  acompañan a lo largo de sus últimos  años de su vida,  con los   rezagos que  en la materia  fueron dejando los últimos cinco regímenes  de gobierno.
+    </p>
+    <p>En números redondos el primer grupo, el de envejecimiento exitoso constituye apenas un 20 %  del total de población, mientras que,  en el segundo,  sobrevive el restante  80%. Hay que reconocer acerca de estos datos que hay no pocas discusiones acerca de sus caracterizaciones y porcentajes estimados que, aunque pudieran ser justificados, la urgencia y el acento del aspecto que abordamos nos motiva a dejarlas para otro momento</p>
+    <p>Algo inocultable y dramático es el injustificable rezago en casi todos los rubros que tienen que ver con la atención de este proceso de transición demográfica por la que pasa el mundo contemporáneo y algo que consideramos que debiera llamar nuestra atención en estos momentos es la definición de a quienes privilegiar en materia de atención sanitaria. Priorizamos las medidas de contención de la enfermedad o aceptamos su inevitabilidad y nos concentramos en su mitigación? ;  qué  tipo de estrategias se pueden diseñar y con qué  riesgos,   para asumir que llegará y se le deberá hacer frente  aún a sabiendas de que la situación de nuestro sistema de salud es precaria e insuficiente.</p>
+    <p>Nos  debemos resignar  a que la  fría inclemencia del coronavirus   arrace  con amplios  sectores de población para quienes  incluso ya hay  - para bien y para mal-  cálculos sobre sus  índices  de letalidad? Ya hay resignada certeza y aceptación de que, si  se  es parte  de la población de la terera  edad,   hay un alto  porcentaje de sufrir los efectos de la enfermedad con las secuelas de hospitalización y entubamiento con  muy poco margen  de sobrevivencia. Si  ademas tenemos  asociado a la vejez  alguna  situación de diabetes, hipertensión, sobrepeso, EPOC, etc, los  índices de letalidad se incrementan. </p>
+    <p>La globalización presente  en  el mundo de la información nos  está permitiendo  conocer todos los días  desde las más  deleznables y  altaneras posiciones para  enfrentar la pandemia, hasta  las  acciones  más nobles, ingeniosas  y  comprometidas  con  la defensa y  salvaguarda de lo humano, combinadas con  imágenes  diversas de una   naturaleza que   se  regodea en  mostrarnos lo que puede  seguir  dando en  estos   pequeños espacios  de tiempo en que nos deja  sentir su fuerza.</p>
+    <p>Seguramente tardaremos   varios años en superar los estragos de todo tipo que el coronavirus deje en las poblaciones del mundo, pero, ojalá y que algo que perdure en nuestras conciencias y praxis social sea una profunda reflexión acerca de que nadie, a nombre de la sociedad, del mundo o de la seguridad de los estados nacionales, tiene   derecho de decidir   quién vive y quien muere. Varios  gobiernos han dejado  deslizar  valoraciones  de  menosprecio a la vida y particularmente  a los de los  adultos mayores, mientras  que otros  hacen apuestas a  veces  incomprendidas  de la necesidad  de preservar la  vida  con el concurso  consciente y  comprometido de todos, Los  llamados vehementes  a permanecer  en casa y   proteger particularmente  en las familias más que en los  hospitales  a la  población  de adultos  mayores. Se trata de un  llamado a nuestros corazones,  a que  el  amor por  ellos es urgente, necesario y posible.</p>
+    <p>Hagamos  un  amplio llamado a todos los  sectores   sociales  de nuestro país que ponga el  énfasis  en demostrar  que  el amor es  posible, urgente y  deseable en tiempos  de  coronavirus. Japón y  sus   medidas en esta materia está constituyéndose  en pardigma de lo que  se debe hacer por la población de adultos  mayores mientras  que Italia   y España están mostrando los  estragos  que se pueden  producir  sobre ellos cuando la conciencia y las  decisiones  no  se  toman a tiempo y en el sentido correcto. Estamos aún en el momento de las decisiones correctas. Pensemos en que los niños, los  jóvenes  y los  adultos  de ahora  seremos los  adutos  mayores  del mañana y  que no  debemos permitir ni hacerles  a ellos, lo  que  no deseamos  para nosotros.. Por  amor  a tus  adutos mayoes y  a ti mismo. Quédate en casa¡¡¡</p>
+    <div class="text-center text-white bg-red-600 h-18 w-32"><a (click)="mostrararticulo(1)">Ver Más artículos</a></div>
+</div>
+ 
+</div>

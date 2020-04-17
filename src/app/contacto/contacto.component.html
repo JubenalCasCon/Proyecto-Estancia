@@ -1,0 +1,76 @@
+<!-- cabecera -->
+<header>
+
+  <div class="bg-cover flex justify-center  items-center flex-col text-white  bg-center"
+      style="background-image: url(../assets/13.jpg); height: 300px;background-color: rgba(0, 0, 0, 0.5);background-blend-mode: darken; ">
+
+      <p class="text-2xl text-center sm:text-4xl mb-2  " style="font-family: Arial, Helvetica, sans-serif;">
+          Instituto del Noroeste en Ciencias de la Salud
+      </p>
+      
+
+      <p class="text-lg mt-2 sm:text-2xl " style="font-family: 'Oswald', sans-serif;">
+          Que estén bien
+      </p>
+      <!-- <button
+          class="bg-blue-500 hover:bg-blue-700 text-white  font-bold py-1 px-2 rounded mt-2 sm:py-2 sm:px-4">Conocenos</button> -->
+          <p>Siguenos en nuestras redes sociales </p>
+          <form>
+          <div class="flex justify-center ">
+            <a class="mr-2 mb-3 mt-3 px-4 py-2" href="https://wa.me/5216681030694"><i class="fa fa-whatsapp fa-2x" ></i></a>
+            <a class="mr-2 mb-3 mt-3 px-4 py-2" href="https://www.facebook.com/inocisalosmochis/"><i class="fa fa-facebook fa-2x" ></i></a>
+            <a class="mr-2 mb-3 mt-3 px-4 py-2" href="https://twitter.com/JessBenjamnCas1"><i class="fa fa-twitter fa-2x" ></i></a>
+              
+          </div>
+        </form>  
+  </div>
+  
+
+  
+</header>
+
+
+<!-- Imagenes con logos de información -->
+<div class="flex flex-row justify-around h-32 flex mt-3 px-4 py-2 mb-2">
+  <a class="w-24" [routerLink]="['']"><img class="w-32" src="../assets/Logo.png"></a>
+  
+  <img class="w-32 " src="../assets/semaforo.jpg" aria-placeholder="Contingencia">
+  
+</div>
+
+<div class="flex justify-center text-center text-4xl mb-2">
+  <p>Contigencia Covid 19</p>
+</div>
+<!-- Menú Principal -->
+
+<div class="flex justify-center my-2">
+  <div><button class="bg-blue-400 hover:bg-blue-600 border-black border-2 border-solid py-2 px-4 w-56  rounded-md ml-2 mr-2" ><a [routerLink]="['/noticias']">Noticias Inocisa</a></button></div>
+  <div><button class="bg-blue-400 hover:bg-blue-600 border-black border-2 border-solid py-2 px-4 w-64 rounded-md ml-2 mr-2"><a [routerLink]="['/informativo']">Reportajes</a></button></div>
+  <div><button class="bg-blue-400 hover:bg-blue-600 border-black border-2 border-solid py-2 px-4 w-64 rounded-md ml-2 mr-2"><a [routerLink]="['/contacto']">Contacto</a></button></div>
+  
+</div> 
+
+<div class="flex justify-center mb-4 mt-5">
+    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-contain ">
+      <div class="flex justify-center">
+        <img class="w-3/4 " src="../assets/contacto.jpg" alt="Sunset in the mountains">
+      </div>
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-4">Aclaramos tus dudas y atendemos tus sugerencias</div>
+          <p class="text-gray-700 text-base">
+          Instituto del Noroeste en Ciencias de la Salud
+          </p>
+          <p class="text-gray-700 text-base">
+            Calle Hidalgo #73 Ejido México
+          </p>
+          <p>Durante la contingencia te atendemos personalmente en nuestros números:</p>
+          <p class="font-extrabold  text-center">Director J.Benjamín Castañeda 6681093241</p>
+          <p class="font-extrabold text-center">Jefa Administrativa Maria Contreras 6681030694</p>
+        </div>
+        <div class="px-6 py-4 flex-no-wrap flex">
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Inocisa</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#AdultosMayores</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#Quedateencasa</span>
+        </div>
+      </div>
+</div>

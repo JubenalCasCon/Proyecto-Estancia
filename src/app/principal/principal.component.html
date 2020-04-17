@@ -1,0 +1,141 @@
+<!-- Cabecera responsiva  -->
+
+ <header>
+
+    <div class="bg-cover flex justify-center  items-center flex-col text-white  bg-center" style="background-image: url(../assets/portadaweb.jfif); height: 300px;background-color: rgba(0, 0, 0, 0.5);background-blend-mode: darken; ">
+        
+        <p class="text-2xl text-center sm:text-4xl mb-2  " style="font-family: Arial, Helvetica, sans-serif;">
+            Instituto del Noroeste en Ciencias de la Salud
+        </p>
+        <img src="../assets/Logo.png" class="h-16 w-16 sm:h-24 sm:w-24">
+        
+        <p class="text-lg mt-2 sm:text-2xl " style="font-family: 'Oswald', sans-serif;">
+            Que estén bien
+        </p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white  font-bold py-1 px-2 rounded mt-2 sm:py-2 sm:px-4">Conocenos</button>
+    </div>
+</header>
+
+<!-- Cards con información principal -->
+
+<div class="container  bg-gray-500 sm:mx-auto flex sm:px-4  min-h-full flex-wrap   lg:flex-no-wrap justify-center  ">
+  <div class="lg:ml-3 max-w-sm rounded overflow-hidden shadow-lg lg:mr-3 mt-4 border-gray-600 border-2 border-solid">
+      <div class="bg-cover  " style="font-family: 'Montserrat', sans-serif;">
+          <img class="max-w-sm h-px" src="../assets/foto6.jpg" alt="portada">
+      </div>
+      <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Personal e instalaciones </div>
+          <p class="text-gray-700 text-base hover:font-bold hover:text-gray-800 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus odio sit
+              corporis doloremque esse. Eveniet veniam, ipsam ab, aspernatur iusto quas harum incidunt in quidem id
+              reprehenderit, ad odit ea!</p>
+      </div>
+    
+  </div>
+
+  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto mt-4 border-gray-600 border-2 border-solid">
+      <div class=" bg-cover ">
+          <img class="w-auto" src="../assets/foto39.jpg" alt="portada">
+      </div>
+      <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Nuestros Programas y servicios</div>
+          <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus odio sit
+              corporis doloremque esse. Eveniet veniam, ipsam ab, aspernatur iusto quas harum incidunt in quidem id
+              reprehenderit, ad odit ea!</p>
+      </div>
+     
+  </div>
+
+  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto mt-4 border-gray-600 border-2 border-solid">
+      <div class="bg-cover ">
+          <img class="w-auto" src="../assets/foto41.jpg" alt="portada">
+      </div>
+      <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Nuestros Valores </div>
+          <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus odio sit
+              corporis doloremque esse. Eveniet veniam, ipsam ab, aspernatur iusto quas harum incidunt in quidem id
+              reprehenderit, ad odit ea!</p>
+      </div>
+     
+  </div>
+</div>
+<!-- Imagen rpresentativa de abuelita mas programación  de sección de preguntas -->
+<div class="container mt-5  mb-5">
+  <div class="grid grid-rows-1">
+    <div class="grid  grid-cols-1 mx-auto flex-col-reverse px-20">
+      <img src="../assets/grandma.svg" alt="ilustracion Ancianita cariñosa">
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5  mb-5">
+  <div class="grid grid-rows-1">
+   
+<div class="grid grid-cols-1 mx-auto flex-col text-lg sm:text-3xl font-bold text-center" style="color: rgba(55, 73, 233, 0.8);">
+  <p>En INOCISA estamos para apoyarte</p>
+</div>
+
+  </div>
+</div>
+
+<!-- Seccion de productos js -->
+
+
+<style>
+  .snap-x {
+      scroll-snap-type: x mandatory;
+      
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  .snap-start {
+    scroll-snap-align: start;
+  }
+  
+  </style>
+  
+  
+  <div class="flex flex-col items-center m-8">
+  
+    <div class="w-full bg-white rounded overflow-x-hidden flex snap-x" style="height: 40vh">
+      <div class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-blue-600" id="slide-1">
+        Slide 1
+      </div>
+      <div class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-green-600" id="slide-2">
+        Slide 2
+      </div>
+      <div class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-red-600" id="slide-3">
+        Slide 3
+      </div>
+      <div class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-orange-600" id="slide-4">
+        Slide 4
+      </div>
+      <div class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-purple-600" id="slide-5">
+        Slide 5
+      </div>
+      <div class="snap-start w-full h-full flex items-center justify-center text-white text-4xl font-bold flex-shrink-0 bg-black relative" id="slide-6">
+        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=448&q=80" class="h-full w-full object-cover absolute inset-0 z-10 opacity-25">
+        <h1 class="z-20 text-center">Any kind of content here, images too!</h1>
+      </div>
+    </div>
+  
+    <div class="flex mt-8">
+      <a class="w-1 mr-1 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-1">1</a>
+      <a class="w-8 mr-1 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-2">2</a>
+      <a class="w-8 mr-1 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-3">3</a>
+      <a class="w-8 mr-1 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-4">4</a>
+      <a class="w-8 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-5">5</a>
+      <a class="w-8 h-8 text-gray-700 rounded-full bg-white flex justify-center items-center" href="#slide-6">6</a>
+    </div>
+  </div>
+
+  <!-- Sección de mapa -->
+  <div class="container mt-5 mb-5 flex justify-center">
+    
+    <div class="inline-block">
+      <p>Visitanos en nuestra dirección</p>
+        <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.9672020787984!2d-109.02665548546574!3d25.804656083617225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba267313f6033f%3A0x6fc9c26bddd61f8e!2sINOCISA%20(instituto%20del%20Noroeste%20en%20Ciencias%20de%20la%20Salud%20A.%20C.)!5e0!3m2!1ses-419!2smx!4v1576542527282!5m2!1ses-419!2smx"
+           ></iframe>
+            <p>Calle Higalo S/n Ejido México Los Mochis Ahome Sinaloa</p>
+          </div>
+   
+</div>
