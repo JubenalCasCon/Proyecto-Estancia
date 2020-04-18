@@ -1,19 +1,19 @@
-<!-- cabecera -->
+<!-- header responsivo -->
 <header>
 
-  <div class="bg-cover flex justify-center  items-center flex-col text-white  bg-center"
-      style="background-image: url(../assets/13.jpg); height: 300px;background-color: rgba(0, 0, 0, 0.5);background-blend-mode: darken; ">
+  <div class=" bg-cover flex justify-center items-center lg:bg-cover lg:flex lg:justify-center  lg:items-center lg:flex-col text-white flex-col bg-center lg:bg-center"
+      style="background-image: url(../assets/13.jpg); height: 200px;background-color: rgba(0, 0, 0, 0.5);background-blend-mode: darken; ">
 
-      <p class="text-2xl text-center sm:text-4xl mb-2  " style="font-family: Arial, Helvetica, sans-serif;">
+      <p class="font-bold lg:text-2xl text-base text-center  mt-4 lg:mb-2  " style="font-family: Arial, Helvetica, sans-serif;">
           Instituto del Noroeste en Ciencias de la Salud
       </p>
-      <p>{{hours}}:{{minutes}}:{{seconds}}</p>
+      
 
-      <p class="text-lg mt-2 sm:text-2xl " style="font-family: 'Oswald', sans-serif;">
+      <p class="text-lg mt-2 sm:text-2xl  " style="font-family: Arial, Helvetica, sans-serif;">
           Que estén bien
       </p>
       
-          <p>Siguenos en nuestras redes sociales </p>
+          <p style="font-family: Arial, Helvetica, sans-serif;">Siguenos en nuestras redes sociales </p>
           <form>
           <div class="flex justify-center ">
             <a class="mr-2 mb-3 mt-3 px-4 py-2" href="https://wa.me/5216681030694"><i class="fa fa-whatsapp fa-2x" ></i></a>
@@ -23,41 +23,55 @@
           </div>
         </form>  
   </div>
-  
 
   
 </header>
+<!-- menu responsivo -->
+<div class="grid grid-rows-3 md:flex md:justify-center md:mt-2">
+    <div class="text-center bg-blue-400 hover:bg-blue-600 border-black border-2 border-solid py-2 px-4 md:w-56  md:rounded-md md:ml-2 md:mr-2">
+      <a class="" [routerLink]="['/noticias']">Noticias Inocisa</a>
+    </div>
+    <div class="text-center bg-blue-400 hover:bg-blue-600 border-black border-2 border-solid py-2 px-4 md:w-56  md:rounded-md md:ml-2 md:mr-2">
+      <a class="" [routerLink]="['/informativo']">Notas</a>
+    </div>
 
-
-<!-- Imagenes con logos de información -->
-<div class="flex flex-row justify-around h-32 flex mt-3 px-4 py-2 mb-2">
-  <a class="w-24" [routerLink]="['']"><img class="w-32" src="../assets/Logo.png"></a>
+    <div class="text-center bg-blue-400 hover:bg-blue-600 border-black border-2 border-solid py-2 px-4 md:w-56  md:rounded-md md:ml-2 md:mr-2">
+      <a class="" [routerLink]="['/contacto']">Contacto</a>
+    </div>
+</div>
+<!-- Logotipos responsivos -->
+<div class="flex flex-row justify-around h-32  mt-3 px-4 py-2 mb-2">
+  <a class=" w-16 md:w-32 md:h-32  xl:w-48 xl:h-64" [routerLink]="['']"><img class="xl:w-48 xl:my-2 xl:py-2" src="../assets/Logo.png"></a>
   
-  <img class="w-32 " src="../assets/semaforo.jpg" aria-placeholder="Contingencia">
+  <img class="w-16 h-16 mt-1 md:w-32 md:h-32 md:mt-4 xl:w-64 xl:h-64 " src="../assets/semaforo.jpg" aria-placeholder="Contingencia">
   
 </div>
 
-<div class="flex justify-center text-center text-4xl mb-2">
-  <p>Contigencia Covid 19</p>
+<div class="md:mt-16 w-full px-2 py-4  flex justify-center text-center text-3xl md:text-4xl " style="font-family:'Amaranth', sans-serif;">
+  <p class="">Contigencia Covid 19</p>
 </div>
-<!-- Menú Principal -->
-
-<div class="flex justify-center my-2">
-  <div><button class="bg-blue-400 hover:bg-blue-600 border-black border-2 border-solid py-2 px-4 w-56  rounded-md ml-2 mr-2" ><a [routerLink]="['/noticias']">Noticias Inocisa</a></button></div>
-  <div><button class="bg-blue-400 hover:bg-blue-600 border-black border-2 border-solid py-2 px-4 w-64 rounded-md ml-2 mr-2"><a [routerLink]="['/informativo']">Reportajes</a></button></div>
-  <div><button class="bg-blue-400 hover:bg-blue-600 border-black border-2 border-solid py-2 px-4 w-64 rounded-md ml-2 mr-2"><a [routerLink]="['/contacto']">Contacto</a></button></div>
-  
-</div> 
 
 <!-- Cuadro de informacion inicial -->
-<div class="border-dashed border-black border-2 px-4 py-2 h-64 mx-3 overflow-hidden text-center">
-     <p class="font-bold mb-2 text-center">Inocisa ante la amenaza del Coronavirus</p>   
-
-    <p>Ante este periodo de contigencia Inocisa cambia y se adapta en favor de los adultos mayores. Ellos son el sector más vulnerable ante el Covit 19 y ante eso nos matenemos  preparados.</p>
-    <p class="text-center">Suscribete a nuestras redes y mantente informado </p>
-    <p>En Inocisa queremos que esten bien.</p>
-</div>
-
+<section>
+  <div class=" mb-5 mt-5 px-2 py-4 mx-auto my-2  justify-center flex container">
+      <div class="slider md:w-1/2 w-full">
+          <div class="slider-container flex flex-row ">
+              <a [routerLink]="['/informativo']"><div title="An" class="image-container h-64 w-full bg-red-600 flex justify-center my-2 text-transparent" style="background-image: url(../assets/beso.jpg);">
+                  <a class="h-full w-full" [routerLink]="['/informativo']">.</a>
+              </div>
+          </a>
+              <div title="pareja de ancianos charlando" class="image-container" style="background-image: url(../assets/beso.jpg);">
+              </div>
+              <div title="ancianitos dandose un beso" class="image-container" style="background-image: url(./assets/rsz_esther-ann-glpyh1cwf0o-unsplash.jpg);">
+              </div>
+              <div title="ancianita tomando una fotografia" class="image-container" style="background-image: url(./assets/rsz_tiago-muraro-pwmds57bapi-unsplash.jpg);">
+              </div>
+              <div title="Ancianito fondo negro mirada profunda" class="image-container" style="background-image: url(./assets/rsz_jd-mason-ckt0ojl9vmi-unsplash.jpg);">
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 <div class="container , mx-auto flex justify-center my-2  w-64 h-64">
   <video src="../assets/gifsanadistacia.mp4"  autoplay loop>
       Tu navegador no implementa el elemento <code>video</code>.
@@ -119,19 +133,7 @@
           </div>
     </div>
 </div>
-<!-- Mapa y dirección -->
 
-
-<!-- <div class="h-8 w-full grid grid-cols-1 grid-flow-row px-4 py-2 mt-5 mb-5  ">
-    <div class="container ">
-            <h4>Te esperamos en nuestra dirección principal</h4>
-            <div class="responsive-iframe">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.9672020787984!2d-109.02665548546574!3d25.804656083617225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba267313f6033f%3A0x6fc9c26bddd61f8e!2sINOCISA%20(instituto%20del%20Noroeste%20en%20Ciencias%20de%20la%20Salud%20A.%20C.)!5e0!3m2!1ses-419!2smx!4v1576542527282!5m2!1ses-419!2smx"
-                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
-            <p>Calle Higalo S/n Ejido México Los Mochis Ahome Sinaloa</p>
-        </div>
-
-</div> -->
 
 
 
